@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Data Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="static/main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .chart {
+            margin-top: 20px;
+        }
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+        path {
+            stroke: steelblue;
+            fill: none;
+            stroke-width: 2;
+        }
+        .axis text {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<h1>Prajwal Garla</h1>
+    <h1>Ship Data Visualizations</h1>
+
+    <!-- Task 1 -->
+    <section>
+        <h2>Task 1: Histogram of Ship Displacement</h2>
+        <div id="chart-task1-japanese" class="chart"></div>
+        <p>Description: This histogram displays the distribution of displacement for Japanese ships.</p>
+        <div id="chart-task1-us" class="chart"></div>
+        <p>Description: This histogram displays the distribution of displacement for United States ships.</p>
+        <p>The displacement distribution of Japanese and United States ships shows quite different ship-building strategies. The Japanese have a peak in their displacement distribution at 10,000 tons, with a very wide distribution up to 70,000 tons, suggesting many more high-displacement, larger vessels. This might indicate that Japan concentrated on fewer but larger vessels, possibly to an even greater degree of heavily armed or even specialized vessels. In that respect, U.S. ships peak at 5,000 tons and have a maximum displacement at about 45,000 tons, with more significant concentration of ships in the lower categories of displacement. A pattern indicative of the fact that the United States might have favored a strategy of deploying a larger number of smaller versatile ships, perhaps for broader operational flexibility. By contrast, the distribution underlines the concentration of Japan on large tonnage vessels, whereas the U.S. Navy would rely more on a standardized and numerous fleet—a reflection of different naval strategies or resources allocated between the two fleets.</p>
+    </section>
+
+    <!-- Task 2 -->
+    <section>
+        <h2>Task 2: Length-to-Beam Ratio by Ship Class</h2>
+        <div id="chart-task2" class="chart"></div>
+        <p>Description: This chart illustrates the length-to-beam ratio for various ship classes, providing insights into ship design and stability.</p>
+        <p>This chart illustrates the average length-to-beam ratio (LBR) for various ship classes, providing insights into their design and operational intent. Higher LBR values represent slender, faster ships optimized for maneuverability, while lower LBR values highlight broader, more stable designs suited for heavy armament and durability. This visualization emphasizes how shipbuilders balanced speed, stability, and functionality in their designs.</p>
+
+    </section>
+
+    <!-- Task 3 -->
+    <section>
+        <h2>Task 3: Rank</h2>
+        <div id="chart-task3" class="chart"></div>
+        <p>Description: This bar chart represents the number of ships in each ship class, highlighting the distribution of ship types in the dataset.</p>
+        <p>This bar chart represents the number of ships in various ship classes, highlighting the distribution and naval strategic priorities. The Casablanca-class Escort Carrier has the highest count, reflecting its key logistical and support role. Other prominent classes, like Cleveland-class Light Cruisers and Essex-class Aircraft Carriers, demonstrate their critical roles in fleet operations. By contrast, heavy battleships like Iowa-class and South Dakota-class have fewer units, emphasizing their specialized but resource-intensive construction.</p>
+
+    </section>
+
+    <!-- Task 4 -->
+    <section>
+        <h2>Task 4: Ship Commissioning Trend Over Time</h2>
+        <div id="chart-task4" class="chart"></div>
+        <p>Description: This line chart shows the trend of ship commissioning over time, reflecting historical patterns in naval shipbuilding.</p>
+        <p>The displacement distribution of Japanese and United States ships shows quite different ship-building strategies. The Japanese have a peak in their displacement distribution at 10,000 tons, with a very wide distribution up to 70,000 tons, suggesting many more high-displacement, larger vessels. This might indicate that Japan concentrated on fewer but larger vessels, possibly to an even greater degree of heavily armed or even specialized vessels. In that respect, U.S. ships peak at 5,000 tons and have a maximum displacement at about 45,000 tons, with more significant concentration of ships in the lower categories of displacement. A pattern indicative of the fact that the United States might have favored a strategy of deploying a larger number of smaller versatile ships, perhaps for broader operational flexibility. By contrast, the distribution underlines the concentration of Japan on large tonnage vessels, whereas the U.S. Navy would rely more on a standardized and numerous fleet—a reflection of different naval strategies or resources allocated between the two fleets.</p>
+    </section>
+
+</body>
+</html>
